@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color:#060918;
+  min-width: 300px;
+  scroll-behavior: smooth;
+  color:#fff;
+  overflow-x: hidden
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+padding: 0 20px;
+min-width: 300px;
+}
+#test{
+display: flex;
+}
+.logo img {
+height: 60px;
+}
+
+.topButtons {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.topButtons a {
+margin: 0 10px;
+}
+
+.topButtons a {
+text-decoration: none;
+color: #fff;
+padding: 5px 10px;
+font-weight: bold;
+}
+.topButtons a:hover {
+color: #e3e6e4
+}
+
+.burger-menu {
+display: none;
+position: relative;
+}
+
+
+@media (max-width: 450px) {
+.topButtons {
+  display: none;
+}
+.burger-menu {
+  display: flex;
+  align-items: center;
+}
+.burger-children {
+  position: absolute;
+  display: none;
+  top: 90%;
+  left: -260%;
+  background-color: transparent;
+  color: #333;
+  background: #fff;
+}
+.burger-children a {
+  border: 1px solid;
+  padding: 8px 5px;
+}
+
+.burger-menu:hover .burger-children{
+    display:flex;
+    flex-direction: column;
+}
+.burger-children a{
+  text-decoration: none;
+  color: #333;
+}
+
+.burger-children a:hover {
+background-color: #f1f1f1;
+}
+}
+
+
+h1 {
+margin: 25px auto 10px auto;
+text-align: center;
+font-size: 48px;
+font-weight: bold;
+color: #fff;
+}
+
+h1 span {
+display: inline-block;
+padding: 5px 10px;
+border: 4px solid #fff;
+border-radius: 30px;
+box-shadow: 0px 0px 20px 5px #fff;
+text-shadow: 0px 0px 10px #fff;
+}
+
+#counterImage{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#counterbx{
+width: 65%
+}
+#imageRight{
+width: 40%
+}
+
+#joinText{
+text-align: center;
+margin-top: 150px;
+font-size: 20px;
+}
+
+#joinText button {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+font-size: 20px;
+}
+.footer {
+ padding: 50px;
+text-align: center
+}
+
+#Discord  {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.countdown div {
+margin: 0px 10px;
+background-color: #fff;
+color: #282c34;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+flex-basis: 25%;
+max-width: 120px;
+text-align: center;
+}
+.countdown span {
+display: block;
+font-size: 30px;
+font-weight: bold;
+margin-top: 10px;
+}
+.countdown span.small {
+font-size: 16px;
+font-weight: normal;
+margin-top: 5px;
+text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+.countdown {
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.countdown div {
+  margin: 5px;
+  flex-basis: 50%;
+  max-width: 140px;
+  padding: 5px;
+}
+.countdown span {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.countdown span.small {
+  font-size: 12px;
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+#joinText{
+text-align: center;
+font-size: 25px;
+}
+
+#joinText button {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+font-size: 15px;
+}
+h1 {
+margin: 25px auto 10px auto;
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+color: #fff;
+}
+
+h1 span {
+display: inline-block;
+padding: 5px 10px;
+border: 4px solid #fff;
+border-radius: 30px;
+box-shadow: 0px 0px 20px 5px #fff;
+text-shadow: 0px 0px 10px #fff;
+}
+
+
+}
+
+.countdown div {
+margin: 0px 10px;
+background-color: #fff;
+color: #282c34;
+border-radius: 50%;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+flex-basis: 25%;
+max-width: 120px;
+text-align: center;
+position: relative;
+}
+
+.countdown div:before {
+content: "";
+position: absolute;
+top: -25%;
+left: -25%;
+width: 150%;
+height: 150%;
+border: 2px solid #ff5733;
+border-radius: 50%;
+animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+0% {
+  transform: rotate(0);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .form input[type="email"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid;
+    width: 300px;
+    max-width: 100%;
+  }
+  .form button {
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+     margin: 0 5px;
+  }
+#subscribe {
+border-radius: 0;
+margin-right:0
+}
+.form button:hover {
+background-color: #5b5f65;
+}
+
+  @media (max-width: 768px) {
+    .form {
+      margin-top: 30px;
+    }
+    .form input[type="email"] {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .form button {
+      margin: 2px 5px;
+      border-radius: 0px;
+    }
+   
+  }
+
+
+.roadmap-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.roadmap-box {
+background-color: white;
+color: black;
+border: 1px solid black;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+max-width: 200px;
+margin: 0 20px;
+}
+
+.arrow-right {
+width: 0;
+height: 0;
+border-top: 20px solid transparent;
+border-bottom: 20px solid transparent;
+border-left: 20px solid #f5f6f7;
+margin: 0 30px;
+}
+
+.arrow-down {
+width: 0;
+height: 0;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid #54585c;
+margin: 30px 0;
+}
+
+.roadmap-date {
+font-size: 1.5rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+.roadmap-container {
+  flex-direction: column;
+}
+
+.arrow-right {
+  display: none;
+}
+
+.arrow-down {
+  margin: 20px 0;
+}
+
+.roadmap-box {
+  margin: 20px 0;
+}
+}
+
